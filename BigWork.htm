@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2Broken Girls</title>
+	<style type="text/css">
+	*{
+    padding: 0;
+    margin: 0;
+	}
+	/*导航*/
+	a{
+		color: #BEE2E7;
+		text-decoration: none;
+		
+	}
+	a:hover{
+		color: black;
+	}
+	ul,li{
+    list-style: none;
+	}
+	#app{
+		width: 100%;
+		height: 50px;
+		top: 0px;
+		background-color:black; 
+	}
+	.head{
+		width: 1200px;
+		height: 50px;
+		margin: auto;
+	}
+	.search-left li{
+		list-style-type: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		float: left;
+		text-align: center;
+		line-height: 50px;
+	}
+	.search-left img{
+		width: 70px;
+		height: 50px;
+
+	}
+	.search form{
+		position: absolute;
+		left: 800px;
+		top: 10px;
+		width: 220px;
+		height: 20px;
+	}
+	.search input{
+		width: 200px;
+		height: 20px;
+	}
+	.search img{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 3px;
+	}
+	.serch button{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 3px;
+	}
+	.search-right li{
+		list-style-type: inline-block;
+		width: 50px;
+		height: 50px;
+		float: right;
+		text-align: center;
+		color: #BEE2E7;
+		line-height: 50px;
+	}
+	.search-right img{
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 11px;
+	}
+	#div2{
+		/*导航栏下面第一个主体部分*/
+		width: 100%;
+		background-color: #fff;
+	}
+	#underleader{
+		/*导航栏下一条*/
+		height:30px;
+		width: 100%;
+		margin: 0 auto;
+		/*background-image: linear-gradient(to bottom,#ccd 10%,#BEE2E0 20%);*/
+		background-color: #bee2e7;
+		border-style: solid;
+		border-width: 2px;
+		border-color: black;
+	}
+	#limg2{
+		/*佩奇*/
+		margin-left: 100px;
+		margin-bottom: 2px;
+		height: 30px;
+		width: 30px;
+	}
+	#pdan{
+		/*滚动文字*/
+        color:black;
+        font-size: 18px; 
+        position: relative;
+        right: -800px;
+        bottom:5px;
+        overflow: hidden;
+    }
+	#div2-1{
+		/*破产姐妹部分*/
+		width:100%;
+		height:480px;
+		margin: 0 auto;
+		/*background-color: black;*/
+		background-image: linear-gradient(to bottom,black 100%,#bbb 20%);
+	}
+	#i{
+		/*破产姐妹图片*/
+		display: inline-block;
+		position: relative;
+		left: 50px;
+		top: 10px;
+		width:350px;
+		height: 450px;
+	}
+	#div2-1p{
+		/*破产姐妹右侧文字*/
+		display: inline-block;
+		position:relative;
+		width: 500px;
+		left: 40px;
+		top:100px;
+	}
+	#pc{
+		/*破产姐妹标题*/
+		font-size:80px;
+		color:#bee2e7;
+	}
+	#pcp{
+		/*破产姐妹右侧文字*/
+		color: white;
+	}
+	#div2-1right{
+		/*破产姐妹右侧轮播图部分*/
+		width:300px;
+		height:180px;
+		display: inline-block;
+		position: relative;
+		left: 520px;
+		top:-180px;
+		overflow:hidden;
+	}
+	#rimg{
+		/*轮播图高*/
+		height:900px;
+		position:absolute;
+		top:-180px;
+	}
+	#slide{
+		/*轮播图图片的设置*/
+		width: 300px;
+		height: 176px;
+		overflow: hidden;
+	}
+	#div3{
+		/*第二个主体部分*/
+		width:100%;
+		height:650px;/*第二部分的高度*/
+		background-image: linear-gradient(to bottom,black 0%,#bbb 90%);
+	}
+	#div3-1p{
+		/*第二主体部分“其它”*/
+		height: 80px;
+		color: #bee2e7;
+		font-size: 60px;
+		font-weight: bolder;
+		margin-left: 30px;
+		font-family:隶书;
+	}
+	#div3-1{
+		/*图片外部*/
+		width:1200px;
+		height:650px;
+		margin: 0 auto;
+	}
+	#div3-1 ul{
+		width: 1165px;
+		height: 280px;
+		margin: 0 auto;
+		border:2px solid black;
+	}
+	#div3-1 ul li{
+		display: inline-block;
+		width: 280px;
+		height: 300px;
+	}
+	#img1{
+		height: 280px;
+		width:300px;
+	}
+	#img2{
+		height: 280px;
+		width:300px;
+	}
+	#img3{
+	    height: 280px;
+		width:300px;
+	}
+	#img4{
+		margin-left: 10px;
+	    height: 280px;
+		width:300px;
+	}
+	#div3-1 span{
+		display: block;
+		width: 287px;
+		height: 280px;
+		text-align: center;
+		cursor: pointer;
+		position:relative;
+		top:-254px;
+		font-size: 20px;
+		margin-top: -29px;
+		background-color: rgb(100,100,100,0);
+	}
+	/*bottom*/
+    .bottom{
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgb(100,100,100);
+	position: absolute;
+	top: 1200px;
+    }
+   .bottom p{
+ 	text-align: center;
+ 	padding-top: 23px;
+ 	color: white;
+ 	font-size: 14px;
+   }
+   .b1{
+ 	margin: 0 14px;
+   }
+   .bottom a{
+ 	color: white;
+   }
+   #gotop{
+ 	width: 70px;
+ 	height: 70px;
+	position: fixed;
+	left:90%;
+	top: 90%;
+  }
+	</style>
+	<!--上边导航-->
+    <!-- head< -->
+     <div id="app">
+     <div class="head">
+        <div class="search-left">
+     	    <ul>
+                <li><img src="image/312.png" alt="logo"></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">国创</a></li>
+                <li><a href="#">治愈</a></li>
+	   	        <li><a href="#">探险</a></li>
+	            <li><a href="#">搞笑</a></li>
+	            <li><a href="#">少儿</a></li>
+	            <li><a href="#">全部</a></li>
+		    </ul>
+	    </div>
+	    <div class="search">
+		    <form>
+			    <input type="text" name="search" value="">
+			    <button><img src="image/search.jpg"></button>
+		    </form>
+	    </div>
+	    <div class="search-right">
+		   	<ul>
+			    <li><a href="#">注册</a></li>
+			    <li style="width:10px;height:50px;">/</li>
+			    <li><a href="#">登陆</a></li>
+			    <li><img src="image/load.jpg"></li>
+			</ul>
+	    </div>	
+    </div>
+    </div>
+</head>
+<body>
+    <div id= "flame"></div>
+    <div id ="div2">
+        <div id ="underleader">
+            <img id ="limg2"src="image/lyw.jpg">
+            <div style="display:inline-block;width:900px;height:20px;margin:0 auto;overflow:hidden;">
+            <p id = "pdan">希望你能够收获快乐！May you be very happpy!</p>
+            </div>
+        </div>
+        <!--2Broken Girls-->
+    	<div id ="div2-1">
+    	    <!--左侧-->
+    	    <div id = "i">
+    	    <img id ="limg1"src="image/girls.jpg"alt="girls">
+    	    </div>
+    		<div id = "div2-1p">
+    		<!--中间-->
+    		<p id ="pc">破产姐妹</p>
+    		<p id ="pcp"><a style="color:#bee2e7;font-weight:bolder;font-size:23px;" href="https://www.baidu.com/s?tn=95861220_hao_pg&ie=utf-8&sc=UWY4PH6vnHczn7qCmyqxTAThIjYkPHTLnj63PWnLPH6sFhnqpA7EnHc1Fh7W5Hc3PH61nHm4PHf&ssl_sample=normal&srcqid=3772226330750706568&H123Tmp=nunew7&word=%E7%A0%B4%E4%BA%A7%E5%A7%90%E5%A6%B9">《破产姐妹》</a>（2 Broke Girls），是由迈克尔·帕特里克·金与惠特妮·卡明联手打造，华纳兄弟电视出品，由<a style="color:#bee2e7;font-weight:bolder;"href="https://www.baidu.com/s?tn=95861220_hao_pg&usm=5&wd=%E5%87%AF%E7%89%B9%C2%B7%E6%88%B4%E7%90%B3%E6%96%AF&ie=utf-8&sa=re__28521">凯特·戴琳斯</a>、<a style="color:#bee2e7;font-weight:bolder;"href="https://www.baidu.com/s?tn=95861220_hao_pg&usm=5&wd=%E8%B4%9D%E4%B8%9D%C2%B7%E6%AF%94%E5%8E%84&ie=utf-8&sa=re__28521">贝丝·比厄</a>主演的情景喜剧。该剧于2011年9月19日在CBS电视网（哥伦比亚广播公司）首播。
+该剧讲述两个身份背景完全不同的都市女孩共同打拼的故事。麦克斯·布莱克（凯特·戴琳斯扮演）出身贫寒，在纽约布鲁克林的一家小餐馆当着服务员。卡洛琳·钱宁（贝丝·比厄饰）本是一名家境优渥的富家女，由于父亲涉嫌操纵庞氏骗局锒铛入狱而家道中落。性格迥异的两人成为了同事兼室友，在餐馆打工的同时为开店卖小蛋糕的梦想共同打拼。
+            </p>
+            <div id ="div2-1right">
+            <div id = "rimg">
+                <div><img id = "slide"src="image/pochan.jpg"></div>
+            	<div><img id = "slide"src="image/po.jpg"></div>
+            	<div><img id = "slide"src="image/chan.jpg"></div>
+            	<div><img id = "slide"src="image/pochan.jpg"></div>
+            	<div><img id = "slide"src="image/po.jpg"></div>
+            </div>
+            </div>
+    	</div>
+    </div>
+         <!--其他 海贼王 老友记 -->
+    <div id = "div3">
+    	<div id ="div3-1">
+    	    <p id="div3-1p">其他</p>
+    	    <ul>
+    	    	<li id = "li1">
+    	    	    <img id ="img1"src="image/haizei.jpg"style="dispaly:none">
+    	    	    <span id = "span1">
+    	    	    <p id = "p1" style = "color:#fff;font-size:20px;opacity:0;">#这是关于一个要成为海贼王男人的故事!#</p><!--划上图片显示文字 -->
+    	    	    </span>
+    	    	</li>
+                <li id = "li2">
+                    <img id ="img2" src = "image/friends.jpg">
+                    <span id = "span2"><p id = "p2" style = "font-size:20px;color:white;opacity:0;">#现实世界，他糟糕得要命，但你会爱上他的。#</p></span>
+                </li>
+                <li id = "li3">
+                    <img id="img3"src="image/bro.jpg">
+                    <span id = "span3"><p id = "p3"style = "color:black;font-size:20px;opacity:0">#谁知大哥大 我是大哥大#！！！</p></span>
+                </li>
+                <li id = "li4">
+                	<img id="img4"src="image/pochan.jpg">
+                    <span id= "span4"><p id = "p4"style = "font-size:20px;color:black;opacity:0">#######或许你需要简单的快乐!</p></span>
+                </li>
+    	    </ul>
+    	    <p id = "lastp" style="margin-left:0px;margin-top:30px;font-size:20px;">希望你能收获快乐！！！</p>
+    	    <p id = "lastp1"style = "margin-left:200px;margin-top:50px;font-size:20px;">快乐满满 幸福满满</p></span>
+    	    <p id = "lastp2"style = "margin-left:540px;font-size:20px;">生活一定要多"哈"</p></span>
+    	    <p id = "lastp3"style = "margin-left:800px;margin-top:50px;font-size:20px;">哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    	    <div id="gotop"><img src="image/gotop.png"></div>
+    	</div>
+
+    </div>	
+    <!--下边固定部分-->
+    <div class="bottom">
+		<p class="bp2"><a href="#">关于我们</a><span class="b1">|</span><a href="#">版权声明</a><span class="b1">|</span><a href="#">VIP服务</a><span class="b1">|</span><a href="#">QQ群部落</a><span class="b1">|</span><a href="#">安利影片</a><span class="b1">|</span><a href="#">合作意向</a><span class="b1">|</span><a href="#">意见反馈</a><span class="b1">|</span><a href="#">联系我们</a></p>
+		<p class="bp2"> 2019-2020 312有限公司 版权所有</p>
+	</div>
+    <script type="text/javascript">
+        function getStyle(obj, attr){
+	        if(obj.currentStyle){
+		       return obj.currentStyle[attr];
+	        } else {
+		        return getComputedStyle(obj, null)[attr];
+	        }
+        }
+        function animate(obj,json,callback){
+	        clearInterval(obj.timer);
+	        obj.timer = setInterval(function(){
+		        var isStop = true;
+		        for(var attr in json){
+			        var now = 0;
+			        if(attr == 'opacity'){
+				        now = parseInt(getStyle(obj,attr)*100);
+			        }else{
+				        now = parseInt(getStyle(obj,attr));
+			        }
+			         var speed = (json[attr] - now) / 8;
+			        speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			        var cur = now + speed;
+			        if(attr == 'opacity'){
+				        obj.style[attr] = cur / 100;
+			        }else{
+			    	    obj.style[attr] = cur + 'px';
+			        } 
+			        if(json[attr] !== cur){
+				        isStop = false;
+			        }
+		        }
+		        if(isStop){
+			        clearInterval(obj.timer);
+			        callback&&callback();
+		        }
+	        }, 30)
+        }
+        // 导航栏下的滚动文字函数
+        var pdan = document.getElementById("pdan");
+        function pmoving(){
+            setInterval(function(){
+            var now = parseInt(getStyle(pdan, 'right'));
+            if(now>=200){
+                now = -800;
+            }
+            pdan.style.right= now + 1 +"px";
+            },20);
+        }
+        // 破产姐妹的轮播图
+        // 轮播下一张
+        var rimg = document.getElementById("rimg");
+        var isMoving =false;//标记图片是否在动
+        var i=1;
+        function next(){
+    	    if(isMoving == false){
+    		isMoving=true;
+    		i++;
+    		animate(rimg,{top:-180*i},function(){
+    			if(i>3){
+    				rimg.style.top = "-180px";
+    				i=1;
+    			}
+    			isMoving = false;
+    		});
+    	    }
+        }
+        function prev(){
+    	    if(isMoving){
+    		    return;//图片未动，不执行函数
+    	    }
+    	    isMoving = true;
+    	    i--;
+    	    animate(rimg,{top:-180*i},function(){
+    		    if(i===0){
+    			    rimg.style.top = -180*3+"px";
+    			    i=3;
+    		    }
+    		    isMoving = false;
+    	    });
+        }
+        var timer = setInterval(next,2000);//两秒播放下张
+        //鼠标划上时文字出现
+        var li1 = document.getElementById("li1");
+        var li2 = document.getElementById("li2");
+        var li3 = document.getElementById("li3");
+        var li4 = document.getElementById("li4");
+        var p1 = document.getElementById("p1");
+        var p2 = document.getElementById("p2");
+        var p3 = document.getElementById("p3");
+        var p4 = document.getElementById("p4");
+        //鼠标移动上图片显示文字  点击跳转至百度
+        li1.onmouseover = function(){
+    	span1.style.backgroundColor = 'rgb(100,100,100,0.5)';
+    	p1.style.opacity = 0.8;
+        }
+        li1.onmouseout = function(){
+    	p1.style.opacity = 0;
+    	span1.style.backgroundColor = 'rgb(100,100,100,0)';
+    	clearInterval(p1.time);
+        }
+        li1.onclick = function(){
+    	window.location.href = "https://www.baidu.com/s?tn=95861220_hao_pg&ie=utf-8&sc=UWY4PH6vnHczn7qCmyqxTAThIjYkPHTLnHbsnHTvP1T4FhnqpA7EnHc1Fh7W5HTsrjbvPH6z&ssl_sample=normal&srcqid=3775715192546353929&H123Tmp=nunew7&word=%E6%B5%B7%E8%B4%BC%E7%8E%8B";
+        }
+        li2.onmouseover = function(){
+    	span2.style.backgroundColor = 'rgb(100,100,100,0.5)';
+    	p2.style.opacity = 0.8;
+        }
+        li2.onmouseout = function(){
+    	span2.style.backgroundColor = 'rgb(100,100,100,0)';
+    	p2.style.opacity = 0;
+        }
+        li2.onclick = function(){
+    	window.location.href = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&srcqid=3775715192546353929&tn=95861220_hao_pg&wd=%E8%80%81%E5%8F%8B%E8%AE%B0&oq=%25E6%25B5%25B7%25E8%25B4%25BC%25E7%258E%258B&rsv_pq=8dc1d1390013ac0f&rsv_t=c3543vgUeWFox9jdnMk5RYrHRzpBRiNOKAUgCPCqusqpcRKu4geomLllEDibDQRBnDK1Pqb5&rqlang=cn&rsv_enter=1&rsv_dl=tb&rsv_sug3=13&rsv_sug1=10&rsv_sug7=101&rsv_sug2=0&inputT=2794&rsv_sug4=3117";
+        }
+        li3.onmouseover = function(){
+    	span3.style.backgroundColor = 'rgb(100,100,100,0.5)';
+    	p3.style.opacity = 0.8;
+        }
+        li3.onmouseout = function(){
+    	span3.style.backgroundColor = 'rgb(100,100,100,0)';
+    	p3.style.opacity = 0;
+        }
+        li3.onclick = function(){
+    	window.location.href = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&srcqid=3775715192546353929&tn=95861220_hao_pg&wd=%E6%88%91%E6%98%AF%E5%A4%A7%E5%93%A5%E5%A4%A7&oq=%25E8%2580%2581%25E5%258F%258B%25E8%25AE%25B0&rsv_pq=d84ed85d00274c51&rsv_t=6bb7SX0xKT2pNhw0bSMSIQQHrMgeS42AXnmMt1p82kmOsYAcoG9mSiHdqM9iAMrR070Me1ka&rqlang=cn&rsv_enter=1&rsv_dl=tb&inputT=3472&rsv_sug3=29&rsv_sug1=23&rsv_sug7=101&rsv_sug2=0&rsv_sug4=4404";
+        }
+        li4.onmouseover = function(){
+    	span4.style.backgroundColor = 'rgb(100,100,100,0.5)';
+    	p4.style.opacity = 0.8;
+        }
+        li4.onmouseout = function(){
+    	span4.style.backgroundColor = 'rgb(100,100,100,0)';
+    	p4.style.opacity = 0;
+        }
+        li4.onclick = function(){
+    	window.location.href = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&srcqid=3775715192546353929&tn=95861220_hao_pg&wd=%E5%B0%8F%E7%8C%AA%E4%BD%A9%E5%A5%87&oq=%25E6%2588%2591%25E6%2598%25AF%25E5%25A4%25A7%25E5%2593%25A5%25E5%25A4%25A7&rsv_pq=cb1fd8cf0027cef4&rsv_t=0302B96DyWcbrrriJnbx2s9GKydp%2B4CZRym91W6AxR1KmDLtTkFtbSxPZ3ONptpMoB4GGgiD&rqlang=cn&rsv_enter=1&rsv_dl=tb&inputT=3193&rsv_sug3=48&rsv_sug1=33&rsv_sug7=101&rsv_sug2=0&rsv_sug4=3274";
+        }
+        //随机色函数封装
+        var color = '#';
+        var str = '0123456789abcdef';
+        var color1 = '#';
+        var color2 = '#';
+        var color3 = '#';
+        var lastp = document.getElementById('lastp');
+        var lastp1 = document.getElementById("lastp1");
+        var lastp2 = document.getElementById('lastp2');
+        var lastp3 = document.getElementById('lastp3');
+	    function suijise(){//随机色函数
+		for(var i = 0;i < 6;i++){
+		    color+=str.charAt(parseInt(Math.random()*str.length));//random()表示0到1的随机浮点数（包含0不含1），*str.length之后表示0到16的随机浮点数（不含16），加上parsInt之后是0到16的随机整数（不含16）str.charAt之后获得str中的任意一个字符
+	        color1+=str.charAt(parseInt(Math.random()*str.length));
+	        color2+=str.charAt(parseInt(Math.random()*str.length));
+	        color3+=str.charAt(parseInt(Math.random()*str.length));
+	    }
+	    lastp.style.color = color;
+	    lastp1.style.color = color1;
+	    lastp2.style.color = color2;
+	    lastp3.style.color = color3;
+	    };
+	    //页面加载完成 文字滚动条  随机色
+        window.onload = function() {
+	    pmoving();//文字飘动
+	    suijise();//随即色
+        var oBtn = document.getElementById('gotop');
+        var bSys = true;
+        var timer = null;
+ 
+        //如何检测用户拖动了滚动条
+        window.onscroll = function() {
+            if (!bSys) {
+                clearInterval(timer);
+            }
+            bSys = false;
+        };
+        oBtn.onclick = function() {
+        timer = setInterval(function() {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var iSpeed = Math.floor( - scrollTop / 8);
+            if (scrollTop == 0) {
+                clearInterval(timer);
+            }
+            bSys = true;
+            document.documentElement.scrollTop = document.body.scrollTop = scrollTop + iSpeed;
+        },
+        30);
+        };
+     };
+//飘雪花
+    function Obj(){}  //创建一个对象 
+    /*为这个对象添加一个具有一个参数的原型方法*/
+    Obj.prototype.draw=function(o){
+        var speed=0;   //雪花每次下落的数值（10px）
+        var startPosLeft=Math.ceil(Math.random()*document.documentElement.clientWidth);//设置雪花随机的开始x值的大小
+        o.style.opacity=(Math.ceil(Math.random()*3)+7)/10;  //设置透明度
+        o.style.left=startPosLeft+'px'; 
+        o.style.color="#BEE2E7";
+        o.style.fontSize=12+Math.ceil(Math.random()*14)+'px';
+        setInterval(function(){
+            //雪花下落的top值小鱼屏幕的可视区域高时执行下列
+            if(speed<document.documentElement.clientHeight){
+                o.style.top=speed+'px';
+                o.style.left=startPosLeft+Math.ceil(Math.random()*8)+'px';
+                speed+=10;
+            }
+            else{
+                o.style.display='none';
+            }
+        },400);
+    }
+ 
+    var flame=document.getElementById('flame');
+  
+    /*使用setInterval定时器每800毫秒创建一个雪花*/
+    setInterval(function(){
+        var odiv=document.createElement('div');  //创建div
+        odiv.innerHTML="❄";   //div的内容
+        odiv.style.position='absolute';  //div的绝对定位
+        flame.appendChild(odiv);   //把创建好的div放进flame中
+        var obj=new Obj();   //创建函数
+        obj.draw(odiv);  //执行obj的draw方法
+    },800);
+
+    </script>
+</body>
+</html>
